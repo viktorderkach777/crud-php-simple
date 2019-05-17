@@ -9,7 +9,6 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC"); // usin
 <head>	
 	<title>Homepage</title>
 </head>
-
 <body>
 <a href="add.html">Add New Data</a><br/><br/>
 
