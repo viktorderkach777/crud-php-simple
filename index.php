@@ -6,7 +6,7 @@ include_once("config.php");
 $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC"); // using mysqli_query instead
 ?>
 <html>
-<head>	
+<head>
 	<title>Homepage</title>
 </head>
 <body>
@@ -22,7 +22,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC"); // usin
 	</tr>
 	<?php
 		
-	while($res = mysqli_fetch_array($result)) { 		
+	while($res = mysqli_fetch_array($result)) {
 		echo "<tr>";
 		echo "<td>".$res['name']."</td>";
 		echo "<td>".$res['age']."</td>";
